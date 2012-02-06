@@ -1,0 +1,6 @@
+*.swp
+*/*.swp
+*.o
+*/*.o
+build/
+test/
