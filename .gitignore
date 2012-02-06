@@ -1,6 +1,4 @@
 *.swp
-*/*.swp
-*.o
-*/*.o
+*.pyc
 build/
 test/
