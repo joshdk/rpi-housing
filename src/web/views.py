@@ -4,7 +4,7 @@ from django.template import Context
 
 
 def static(request,path):
-	path='./statics'+'/'+path
+	path='./'+path
 	fd=open(path,'r')
 	data=fd.read()
 	fd.close()

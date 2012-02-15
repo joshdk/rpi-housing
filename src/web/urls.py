@@ -6,7 +6,7 @@ from web.views import *
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-	url(r'^/?$',static,{'path':'html/main.html'}),
+	url(r'^/?$',static,{'path':'statics/html/main.html'}),
 	url(r'^(.*[^/])$',static),
 
 	# Uncomment the next line to enable the admin:
