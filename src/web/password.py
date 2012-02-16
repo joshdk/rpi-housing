@@ -1,2 +1,0 @@
-def getPassword():
-  return 'PASSWORD'
