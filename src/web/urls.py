@@ -6,8 +6,10 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
+	url(r'^session/?$',session),
 	url(r'^/?$',static,{'path':'statics/html/main.html'}),
 	url(r'^(.*[^/])$',static),
+
 
 	# Uncomment the next line to enable the admin:
    url(r'^admin/', include(admin.site.urls)),
