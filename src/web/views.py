@@ -8,4 +8,9 @@ def static(request,path):
 	fd=open(path,'r')
 	data=fd.read()
 	fd.close()
-	return HttpResponse(data)
+	if path.endswith(".css"):
+		return HttpResponse(data,mimetype="text/css charset=utf-8")
+	elif path.endswith(".js"):
+		return HttpResponse(data,mimetype="application/javascript charset=utf-8")
+	else:
+		return HttpResponse(data)
