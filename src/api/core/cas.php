@@ -3,10 +3,10 @@ include("CAS.php");
 
 
 //Central Authentication Service wrapper
-class casauth{
+class cas{
 	
 	//Class constructor
-	//ex. $cas = new casauth();
+	//ex. $cas = new cas();
 	public function __construct(){
 	}
 
