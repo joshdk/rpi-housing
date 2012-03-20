@@ -1,0 +1,32 @@
+<h3>about stackwyck apartments</h3>
+
+		
+
+<h4>- Cost</h4>
+<ul class="building-cost">
+	<li>For 2011-2012 academic year:</li>
+	<li>$7800/person (utilites included) - 4 bedrooms</li>
+	
+</ul>
+
+<h4>- Description</h4>
+<p class="building-description">
+Stacwyck is located near the athletic fields and the Field House. It comprises five buildings, McGiffert, Williams, Thompson, Wiltsie and Rousseau Houses, with 12 apartments each. They house four students, each having a furnished bedroom, and sharing a large living, dining, and kitchen area. Bedrooms are equipped with bed, dresser, desk, chair, and closet. Living and dining areas are furnished and utilities are included in the room charge.</p>
+
+<h4>- Layout</h4>(click for full size)
+<br /><br />
+<h4>McGiffert House</h4>
+<a href="images/stack-mcgiffert-layout.gif" target="_blank"><img class="layout" src="images/stack-mcgiffert-layout.gif" alt="stack-mcgiffert-layout" /></a>
+	
+<h4>Wiltsie House</h4>
+<a href="images/stack-wiltsie-layout.gif" target="_blank"><img class="layout" src="images/stack-wiltsie-layout.gif" alt="stack-wiltsie-layout" /></a>
+	
+<h4>Williams House</h4>
+<a href="images/stack-williams-layout.gif" target="_blank"><img class="layout" src="images/stack-williams-layout.gif" alt="stack-williams-layout" /></a>
+	
+<h4>Rousseau House</h4>
+<a href="images/stack-rousseau-layout.gif" target="_blank"><img class="layout" src="images/stack-rousseau-layout.gif" alt="stack-rousseau-layout" /></a>
+	
+<h4>Thompson House</h4>
+<a href="images/stack-thompson-layout.gif" target="_blank"><img class="layout" src="images/stack-thompson-layout.gif" alt="stack-thompson-layout" /></a>
+	
