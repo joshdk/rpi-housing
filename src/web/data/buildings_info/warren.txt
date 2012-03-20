@@ -1,0 +1,23 @@
+<h3>About Warren</h3>
+
+<img src="images/warren-img.jpg" class="building-img" alt="warren-img" />		
+
+<h4>- Cost</h4>
+<ul class="building-cost">
+	<li>For 2011-2012 academic year:</li>
+	<li>Double - $6840/person</li>
+	
+</ul>
+
+<h4>- Description</h4>
+<p class="building-description">
+Warren houses approximately 100 upperclass students in double rooms. Each room has a private bath and is divided by a wardrobe into semi-private living areas. This privacy wall is not shown in the floor plans.
+<br />
+The first floor of Warren has a well-equipped kitchen and lounge.
+<br />
+A printer is located on the first floor. The printer room has an outside entrance and is accessible to all campus residents.
+</p>
+
+<h4>- Layout</h4>(click for full size)
+<a href="images/warren-layout.gif" target="_blank"><img class="layout" src="images/warren-layout.gif" alt="blitman-layout" /></a>
+					
