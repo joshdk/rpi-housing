@@ -49,6 +49,26 @@ class database{
 	}
 
 
+	//Create a prepared statement
+	//ex $db->prepare("my qyery","SELECT * FROM table where value=$1");
+	public function prepare($name,$format){
+		if($this->resource=pg_prepare($this->connection,$name,$format)){
+			return true;
+		}
+		return false;
+	}
+
+
+	//Execute a prepared statement
+	//ex $db->execute(""my query",array("john doe"));
+	public function execute($name,$data){
+		if($this->resource=pg_execute($this->connection,$name,$data)){
+			return true;
+		}
+		return false;
+	}
+
+
 	//Fetch a single result row as an associative array
 	//ex. $db->fetch_row_assoc();
 	public function fetch_row_assoc(){
