@@ -43,7 +43,7 @@
 
 	<title>RPI Housing</title>
 	<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" type="text/css" href="data/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="data/CSS/style.css" />
 	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css" media="all" /> 
 
 
