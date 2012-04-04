@@ -2,8 +2,9 @@
 
 
 <?php
-	include_once('data/CAS.php');
-	include_once('data/config.php');
+
+	include_once($_SERVER['DOCUMENT_ROOT'] . '.../web/data/CAS.php');
+	include_once($_SERVER['DOCUMENT_ROOT'] . '.../api/core/config.php');
 	
 	$casfn = new cas();
 

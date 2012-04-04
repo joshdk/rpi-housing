@@ -1,5 +1,5 @@
 <?php
-include("CAS/CAS.php");
+include("CAS\CAS.php");
 
 
 //Central Authentication Service wrapper
