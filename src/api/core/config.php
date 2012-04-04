@@ -24,4 +24,12 @@ $ROLES=array(
 );
 
 
+//Array of CAS authentication server information
+$CAS=array(
+	"host"=>"cas-auth.rpi.edu",
+	"port"=>443,
+	"context"=>"/cas",
+);
+
+
 ?>
