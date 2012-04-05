@@ -3894,3 +3894,1103 @@ A816 .|    -
 124A .|    |    <= false
 124A .|    <= false
 124A .<= false
+E5BC .START phpCAS-1.2.2 ****************** [CAS.php:478]
+E5BC .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+E5BC .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+E5BC .|    |    Starting a new session [Client.php:710]
+E5BC .|    <= ''
+E5BC .<= ''
+E5BC .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+E5BC .<= ''
+E5BC .=> phpCAS::checkAuthentication() [CAS.php:39]
+E5BC .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+E5BC .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+E5BC .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+E5BC .|    |    |    |    no user found [Client.php:1239]
+E5BC .|    |    |    <= false
+E5BC .|    |    |    no ticket found [Client.php:1120]
+E5BC .|    |    <= false
+E5BC .|    |    user is not authenticated (cache reset) [Client.php:1036]
+E5BC .|    |    => CAS_Client::redirectToCas(true) [Client.php:1037]
+E5BC .|    |    |    => CAS_Client::getServerLoginURL(true, false) [Client.php:1255]
+E5BC .|    |    |    |    => CAS_Client::getURL() [Client.php:356]
+E5BC .|    |    |    |    |    Final URI: http://test.sdd/web/ [Client.php:2886]
+E5BC .|    |    |    |    <= 'http://test.sdd/web/'
+E5BC .|    |    |    <= 'https://cas-auth.rpi.edu/cas/login?service=http%3A%2F%2Ftest.sdd%2Fweb%2F&gateway=true'
+E5BC .|    |    |    Redirect to : https://cas-auth.rpi.edu/cas/login?service=http%3A%2F%2Ftest.sdd%2Fweb%2F&gateway=true [Client.php:1257]
+E5BC .|    |    |    exit()
+E5BC .|    |    |    -
+E5BC .|    |    -
+E5BC .|    -
+6121 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+6121 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+6121 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+6121 .|    |    Starting a new session [Client.php:710]
+6121 .|    <= ''
+6121 .<= ''
+6121 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+6121 .<= ''
+6121 .=> phpCAS::checkAuthentication() [CAS.php:39]
+6121 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+6121 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+6121 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+6121 .|    |    |    |    no user found [Client.php:1239]
+6121 .|    |    |    <= false
+6121 .|    |    |    no ticket found [Client.php:1120]
+6121 .|    |    <= false
+6121 .|    <= false
+6121 .<= false
+2DAB .START phpCAS-1.2.2 ****************** [CAS.php:478]
+2DAB .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+2DAB .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+2DAB .|    |    Starting a new session [Client.php:710]
+2DAB .|    <= ''
+2DAB .<= ''
+2DAB .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+2DAB .<= ''
+2DAB .=> phpCAS::forceAuthentication() [CAS.php:25]
+2DAB .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+2DAB .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+2DAB .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+2DAB .|    |    |    |    no user found [Client.php:1239]
+2DAB .|    |    |    <= false
+2DAB .|    |    |    no ticket found [Client.php:1120]
+2DAB .|    |    <= false
+2DAB .|    |    => CAS_Client::redirectToCas(false) [Client.php:971]
+2DAB .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1255]
+2DAB .|    |    |    |    => CAS_Client::getURL() [Client.php:356]
+2DAB .|    |    |    |    |    Final URI: http://test.sdd/web/?login= [Client.php:2886]
+2DAB .|    |    |    |    <= 'http://test.sdd/web/?login='
+2DAB .|    |    |    <= 'https://cas-auth.rpi.edu/cas/login?service=http%3A%2F%2Ftest.sdd%2Fweb%2F%3Flogin%3D'
+2DAB .|    |    |    Redirect to : https://cas-auth.rpi.edu/cas/login?service=http%3A%2F%2Ftest.sdd%2Fweb%2F%3Flogin%3D [Client.php:1257]
+2DAB .|    |    |    exit()
+2DAB .|    |    |    -
+2DAB .|    |    -
+2DAB .|    -
+3A61 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+3A61 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+3A61 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+3A61 .|    |    Starting a new session [Client.php:710]
+3A61 .|    |    ST or PT 'ST-66902-cdNMHkyBGdQbtMboE9Ki-cas' found [Client.php:796]
+3A61 .|    <= ''
+3A61 .<= ''
+3A61 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+3A61 .<= ''
+3A61 .=> phpCAS::forceAuthentication() [CAS.php:25]
+3A61 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+3A61 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+3A61 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+3A61 .|    |    |    |    no user found [Client.php:1239]
+3A61 .|    |    |    <= false
+3A61 .|    |    |    PT `ST-66902-cdNMHkyBGdQbtMboE9Ki-cas' is present [Client.php:1093]
+3A61 .|    |    |    => CAS_Client::validatePT('', NULL, NULL) [Client.php:1094]
+3A61 .|    |    |    |     [Client.php:2584]
+3A61 .|    |    |    |    => CAS_Client::getServerProxyValidateURL() [Client.php:2586]
+3A61 .|    |    |    |    |    => CAS_Client::getURL() [Client.php:475]
+3A61 .|    |    |    |    |    |    Final URI: http://test.sdd/web/?login= [Client.php:2886]
+3A61 .|    |    |    |    |    <= 'http://test.sdd/web/?login='
+3A61 .|    |    |    |    <= 'https://cas-auth.rpi.edu/cas/proxyValidate?service=http%3A%2F%2Ftest.sdd%2Fweb%2F%3Flogin%3D'
+3A61 .|    |    |    |    => CAS_CurlRequest::_sendRequest() [AbstractRequest.php:191]
+3A61 .|    |    |    |    |    Response Body: 
+3A61 .|    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+3A61 .|    |    |    |    |    	<cas:authenticationSuccess>
+3A61 .|    |    |    |    |    		<cas:user>lbassb</cas:user>
+3A61 .|    |    |    |    |    
+3A61 .|    |    |    |    |    
+3A61 .|    |    |    |    |    	</cas:authenticationSuccess>
+3A61 .|    |    |    |    |    </cas:serviceResponse>
+3A61 .|    |    |    |    |     [CurlRequest.php:133]
+3A61 .|    |    |    |    <= true
+3A61 .|    |    |    |    => CAS_Client::readExtraAttributesCas20(DOMNodeList) [Client.php:2646]
+3A61 .|    |    |    |    |    Testing for rubycas style attributes [Client.php:2741]
+3A61 .|    |    |    |    <= ''
+3A61 .|    |    |    |    => CAS_Client::renameSession('ST-66902-cdNMHkyBGdQbtMboE9Ki-cas') [Client.php:2675]
+3A61 .|    |    |    |    |    Session ID: ST66902cdNMHkyBGdQbtMboE9Kicas [Client.php:2977]
+3A61 .|    |    |    |    |    Restoring old session vars [Client.php:2980]
+3A61 .|    |    |    |    <= ''
+3A61 .|    |    |    <= true
+3A61 .|    |    |    PT `ST-66902-cdNMHkyBGdQbtMboE9Ki-cas' was validated [Client.php:1095]
+3A61 .|    |    |    => CAS_Client::getURL() [Client.php:1146]
+3A61 .|    |    |    <= 'http://test.sdd/web/?login='
+3A61 .|    |    |    => CAS_Client::getURL() [Client.php:1147]
+3A61 .|    |    |    <= 'http://test.sdd/web/?login='
+3A61 .|    |    |    Prepare redirect to : http://test.sdd/web/?login= [Client.php:1147]
+3A61 .|    |    |    exit()
+3A61 .|    |    |    -
+3A61 .|    |    -
+3A61 .|    -
+23D8 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+23D8 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+23D8 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+23D8 .|    |    Starting a new session [Client.php:710]
+23D8 .|    <= ''
+23D8 .<= ''
+23D8 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+23D8 .<= ''
+23D8 .=> phpCAS::forceAuthentication() [CAS.php:25]
+23D8 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+23D8 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+23D8 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+23D8 .|    |    |    |    user = `lbassb' [Client.php:1229]
+23D8 .|    |    |    |    proxies = "" [Client.php:1234]
+23D8 .|    |    |    <= true
+23D8 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+23D8 .|    |    <= true
+23D8 .|    |    no need to authenticate [Client.php:964]
+23D8 .|    <= true
+23D8 .|    no need to authenticate (user `lbassb' is already authenticated) [CAS.php:1097]
+23D8 .<= ''
+23D8 .=> phpCAS::checkAuthentication() [CAS.php:39]
+23D8 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+23D8 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+23D8 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+23D8 .|    |    |    |    user = `lbassb' [Client.php:1229]
+23D8 .|    |    |    |    proxies = "" [Client.php:1234]
+23D8 .|    |    |    <= true
+23D8 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+23D8 .|    |    <= true
+23D8 .|    |    user is authenticated [Client.php:1006]
+23D8 .|    <= true
+23D8 .<= true
+1AB3 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+1AB3 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+1AB3 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+1AB3 .|    |    Starting a new session [Client.php:710]
+1AB3 .|    <= ''
+1AB3 .<= ''
+1AB3 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+1AB3 .<= ''
+1AB3 .=> phpCAS::checkAuthentication() [CAS.php:39]
+1AB3 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+1AB3 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+1AB3 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+1AB3 .|    |    |    |    no user found [Client.php:1239]
+1AB3 .|    |    |    <= false
+1AB3 .|    |    |    no ticket found [Client.php:1120]
+1AB3 .|    |    <= false
+1AB3 .|    |    user is not authenticated (cache reset) [Client.php:1036]
+1AB3 .|    |    => CAS_Client::redirectToCas(true) [Client.php:1037]
+1AB3 .|    |    |    => CAS_Client::getServerLoginURL(true, false) [Client.php:1255]
+1AB3 .|    |    |    |    => CAS_Client::getURL() [Client.php:356]
+1AB3 .|    |    |    |    |    Final URI: http://test.sdd/web/ [Client.php:2886]
+1AB3 .|    |    |    |    <= 'http://test.sdd/web/'
+1AB3 .|    |    |    <= 'https://cas-auth.rpi.edu/cas/login?service=http%3A%2F%2Ftest.sdd%2Fweb%2F&gateway=true'
+1AB3 .|    |    |    Redirect to : https://cas-auth.rpi.edu/cas/login?service=http%3A%2F%2Ftest.sdd%2Fweb%2F&gateway=true [Client.php:1257]
+1AB3 .|    |    |    exit()
+1AB3 .|    |    |    -
+1AB3 .|    |    -
+1AB3 .|    -
+F01C .START phpCAS-1.2.2 ****************** [CAS.php:478]
+F01C .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+F01C .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+F01C .|    |    Starting a new session [Client.php:710]
+F01C .|    <= ''
+F01C .<= ''
+F01C .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+F01C .<= ''
+F01C .=> phpCAS::checkAuthentication() [CAS.php:39]
+F01C .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+F01C .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+F01C .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+F01C .|    |    |    |    no user found [Client.php:1239]
+F01C .|    |    |    <= false
+F01C .|    |    |    no ticket found [Client.php:1120]
+F01C .|    |    <= false
+F01C .|    <= false
+F01C .<= false
+F624 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+F624 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+F624 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+F624 .|    |    Starting a new session [Client.php:710]
+F624 .|    <= ''
+F624 .<= ''
+F624 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+F624 .<= ''
+F624 .=> phpCAS::forceAuthentication() [CAS.php:25]
+F624 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+F624 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+F624 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+F624 .|    |    |    |    no user found [Client.php:1239]
+F624 .|    |    |    <= false
+F624 .|    |    |    no ticket found [Client.php:1120]
+F624 .|    |    <= false
+F624 .|    |    => CAS_Client::redirectToCas(false) [Client.php:971]
+F624 .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1255]
+F624 .|    |    |    |    => CAS_Client::getURL() [Client.php:356]
+F624 .|    |    |    |    |    Final URI: http://test.sdd/web/?login= [Client.php:2886]
+F624 .|    |    |    |    <= 'http://test.sdd/web/?login='
+F624 .|    |    |    <= 'https://cas-auth.rpi.edu/cas/login?service=http%3A%2F%2Ftest.sdd%2Fweb%2F%3Flogin%3D'
+F624 .|    |    |    Redirect to : https://cas-auth.rpi.edu/cas/login?service=http%3A%2F%2Ftest.sdd%2Fweb%2F%3Flogin%3D [Client.php:1257]
+F624 .|    |    |    exit()
+F624 .|    |    |    -
+F624 .|    |    -
+F624 .|    -
+EEC1 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+EEC1 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+EEC1 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+EEC1 .|    |    Starting a new session [Client.php:710]
+EEC1 .|    |    ST or PT 'ST-67632-Do26cBwbn6XHF9mCygUJ-cas' found [Client.php:796]
+EEC1 .|    <= ''
+EEC1 .<= ''
+EEC1 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+EEC1 .<= ''
+EEC1 .=> phpCAS::forceAuthentication() [CAS.php:25]
+EEC1 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+EEC1 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+EEC1 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+EEC1 .|    |    |    |    no user found [Client.php:1239]
+EEC1 .|    |    |    <= false
+EEC1 .|    |    |    PT `ST-67632-Do26cBwbn6XHF9mCygUJ-cas' is present [Client.php:1093]
+EEC1 .|    |    |    => CAS_Client::validatePT('', NULL, NULL) [Client.php:1094]
+EEC1 .|    |    |    |     [Client.php:2584]
+EEC1 .|    |    |    |    => CAS_Client::getServerProxyValidateURL() [Client.php:2586]
+EEC1 .|    |    |    |    |    => CAS_Client::getURL() [Client.php:475]
+EEC1 .|    |    |    |    |    |    Final URI: http://test.sdd/web/?login= [Client.php:2886]
+EEC1 .|    |    |    |    |    <= 'http://test.sdd/web/?login='
+EEC1 .|    |    |    |    <= 'https://cas-auth.rpi.edu/cas/proxyValidate?service=http%3A%2F%2Ftest.sdd%2Fweb%2F%3Flogin%3D'
+EEC1 .|    |    |    |    => CAS_CurlRequest::_sendRequest() [AbstractRequest.php:191]
+EEC1 .|    |    |    |    |    Response Body: 
+EEC1 .|    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+EEC1 .|    |    |    |    |    	<cas:authenticationSuccess>
+EEC1 .|    |    |    |    |    		<cas:user>lbassb</cas:user>
+EEC1 .|    |    |    |    |    
+EEC1 .|    |    |    |    |    
+EEC1 .|    |    |    |    |    	</cas:authenticationSuccess>
+EEC1 .|    |    |    |    |    </cas:serviceResponse>
+EEC1 .|    |    |    |    |     [CurlRequest.php:133]
+EEC1 .|    |    |    |    <= true
+EEC1 .|    |    |    |    => CAS_Client::readExtraAttributesCas20(DOMNodeList) [Client.php:2646]
+EEC1 .|    |    |    |    |    Testing for rubycas style attributes [Client.php:2741]
+EEC1 .|    |    |    |    <= ''
+EEC1 .|    |    |    |    => CAS_Client::renameSession('ST-67632-Do26cBwbn6XHF9mCygUJ-cas') [Client.php:2675]
+EEC1 .|    |    |    |    |    Session ID: ST67632Do26cBwbn6XHF9mCygUJcas [Client.php:2977]
+EEC1 .|    |    |    |    |    Restoring old session vars [Client.php:2980]
+EEC1 .|    |    |    |    <= ''
+EEC1 .|    |    |    <= true
+EEC1 .|    |    |    PT `ST-67632-Do26cBwbn6XHF9mCygUJ-cas' was validated [Client.php:1095]
+EEC1 .|    |    |    => CAS_Client::getURL() [Client.php:1146]
+EEC1 .|    |    |    <= 'http://test.sdd/web/?login='
+EEC1 .|    |    |    => CAS_Client::getURL() [Client.php:1147]
+EEC1 .|    |    |    <= 'http://test.sdd/web/?login='
+EEC1 .|    |    |    Prepare redirect to : http://test.sdd/web/?login= [Client.php:1147]
+EEC1 .|    |    |    exit()
+EEC1 .|    |    |    -
+EEC1 .|    |    -
+EEC1 .|    -
+861D .START phpCAS-1.2.2 ****************** [CAS.php:478]
+861D .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+861D .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+861D .|    |    Starting a new session [Client.php:710]
+861D .|    <= ''
+861D .<= ''
+861D .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+861D .<= ''
+861D .=> phpCAS::forceAuthentication() [CAS.php:25]
+861D .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+861D .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+861D .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+861D .|    |    |    |    user = `lbassb' [Client.php:1229]
+861D .|    |    |    |    proxies = "" [Client.php:1234]
+861D .|    |    |    <= true
+861D .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+861D .|    |    <= true
+861D .|    |    no need to authenticate [Client.php:964]
+861D .|    <= true
+861D .|    no need to authenticate (user `lbassb' is already authenticated) [CAS.php:1097]
+861D .<= ''
+861D .=> phpCAS::checkAuthentication() [CAS.php:39]
+861D .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+861D .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+861D .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+861D .|    |    |    |    user = `lbassb' [Client.php:1229]
+861D .|    |    |    |    proxies = "" [Client.php:1234]
+861D .|    |    |    <= true
+861D .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+861D .|    |    <= true
+861D .|    |    user is authenticated [Client.php:1006]
+861D .|    <= true
+861D .<= true
+2CC9 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+2CC9 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+2CC9 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+2CC9 .|    |    Starting a new session [Client.php:710]
+2CC9 .|    <= ''
+2CC9 .<= ''
+2CC9 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+2CC9 .<= ''
+2CC9 .=> phpCAS::checkAuthentication() [CAS.php:39]
+2CC9 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+2CC9 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+2CC9 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+2CC9 .|    |    |    |    no user found [Client.php:1239]
+2CC9 .|    |    |    <= false
+2CC9 .|    |    |    no ticket found [Client.php:1120]
+2CC9 .|    |    <= false
+2CC9 .|    |    user is not authenticated (cache reset) [Client.php:1036]
+2CC9 .|    |    => CAS_Client::redirectToCas(true) [Client.php:1037]
+2CC9 .|    |    |    => CAS_Client::getServerLoginURL(true, false) [Client.php:1255]
+2CC9 .|    |    |    |    => CAS_Client::getURL() [Client.php:356]
+2CC9 .|    |    |    |    |    Final URI: http://test.sdd/web/ [Client.php:2886]
+2CC9 .|    |    |    |    <= 'http://test.sdd/web/'
+2CC9 .|    |    |    <= 'https://cas-auth.rpi.edu/cas/login?service=http%3A%2F%2Ftest.sdd%2Fweb%2F&gateway=true'
+2CC9 .|    |    |    Redirect to : https://cas-auth.rpi.edu/cas/login?service=http%3A%2F%2Ftest.sdd%2Fweb%2F&gateway=true [Client.php:1257]
+2CC9 .|    |    |    exit()
+2CC9 .|    |    |    -
+2CC9 .|    |    -
+2CC9 .|    -
+8172 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+8172 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+8172 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+8172 .|    |    Starting a new session [Client.php:710]
+8172 .|    <= ''
+8172 .<= ''
+8172 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+8172 .<= ''
+8172 .=> phpCAS::checkAuthentication() [CAS.php:39]
+8172 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+8172 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+8172 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+8172 .|    |    |    |    no user found [Client.php:1239]
+8172 .|    |    |    <= false
+8172 .|    |    |    no ticket found [Client.php:1120]
+8172 .|    |    <= false
+8172 .|    <= false
+8172 .<= false
+62DD .START phpCAS-1.2.2 ****************** [CAS.php:478]
+62DD .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+62DD .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+62DD .|    |    Starting a new session [Client.php:710]
+62DD .|    <= ''
+62DD .<= ''
+62DD .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+62DD .<= ''
+62DD .=> phpCAS::checkAuthentication() [CAS.php:39]
+62DD .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+62DD .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+62DD .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+62DD .|    |    |    |    no user found [Client.php:1239]
+62DD .|    |    |    <= false
+62DD .|    |    |    no ticket found [Client.php:1120]
+62DD .|    |    <= false
+62DD .|    |    user is not authenticated (cache reset) [Client.php:1036]
+62DD .|    |    => CAS_Client::redirectToCas(true) [Client.php:1037]
+62DD .|    |    |    => CAS_Client::getServerLoginURL(true, false) [Client.php:1255]
+62DD .|    |    |    |    => CAS_Client::getURL() [Client.php:356]
+62DD .|    |    |    |    |    Final URI: http://test.sdd/web/ [Client.php:2886]
+62DD .|    |    |    |    <= 'http://test.sdd/web/'
+62DD .|    |    |    <= 'https://cas-auth.rpi.edu/cas/login?service=http%3A%2F%2Ftest.sdd%2Fweb%2F&gateway=true'
+62DD .|    |    |    Redirect to : https://cas-auth.rpi.edu/cas/login?service=http%3A%2F%2Ftest.sdd%2Fweb%2F&gateway=true [Client.php:1257]
+62DD .|    |    |    exit()
+62DD .|    |    |    -
+62DD .|    |    -
+62DD .|    -
+2626 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+2626 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+2626 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+2626 .|    |    Starting a new session [Client.php:710]
+2626 .|    <= ''
+2626 .<= ''
+2626 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+2626 .<= ''
+2626 .=> phpCAS::checkAuthentication() [CAS.php:39]
+2626 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+2626 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+2626 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+2626 .|    |    |    |    no user found [Client.php:1239]
+2626 .|    |    |    <= false
+2626 .|    |    |    no ticket found [Client.php:1120]
+2626 .|    |    <= false
+2626 .|    <= false
+2626 .<= false
+CAEF .START phpCAS-1.2.2 ****************** [CAS.php:478]
+CAEF .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+CAEF .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+CAEF .|    |    Starting a new session [Client.php:710]
+CAEF .|    <= ''
+CAEF .<= ''
+CAEF .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+CAEF .<= ''
+CAEF .=> phpCAS::forceAuthentication() [CAS.php:25]
+CAEF .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+CAEF .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+CAEF .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+CAEF .|    |    |    |    no user found [Client.php:1239]
+CAEF .|    |    |    <= false
+CAEF .|    |    |    no ticket found [Client.php:1120]
+CAEF .|    |    <= false
+CAEF .|    |    => CAS_Client::redirectToCas(false) [Client.php:971]
+CAEF .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1255]
+CAEF .|    |    |    |    => CAS_Client::getURL() [Client.php:356]
+CAEF .|    |    |    |    |    Final URI: http://test.sdd/web/?login= [Client.php:2886]
+CAEF .|    |    |    |    <= 'http://test.sdd/web/?login='
+CAEF .|    |    |    <= 'https://cas-auth.rpi.edu/cas/login?service=http%3A%2F%2Ftest.sdd%2Fweb%2F%3Flogin%3D'
+CAEF .|    |    |    Redirect to : https://cas-auth.rpi.edu/cas/login?service=http%3A%2F%2Ftest.sdd%2Fweb%2F%3Flogin%3D [Client.php:1257]
+CAEF .|    |    |    exit()
+CAEF .|    |    |    -
+CAEF .|    |    -
+CAEF .|    -
+06CB .START phpCAS-1.2.2 ****************** [CAS.php:478]
+06CB .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+06CB .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+06CB .|    |    Starting a new session [Client.php:710]
+06CB .|    |    ST or PT 'ST-67925-Ug0SCkJAlz5Q3CYcpNeQ-cas' found [Client.php:796]
+06CB .|    <= ''
+06CB .<= ''
+06CB .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+06CB .<= ''
+06CB .=> phpCAS::forceAuthentication() [CAS.php:25]
+06CB .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+06CB .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+06CB .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+06CB .|    |    |    |    no user found [Client.php:1239]
+06CB .|    |    |    <= false
+06CB .|    |    |    PT `ST-67925-Ug0SCkJAlz5Q3CYcpNeQ-cas' is present [Client.php:1093]
+06CB .|    |    |    => CAS_Client::validatePT('', NULL, NULL) [Client.php:1094]
+06CB .|    |    |    |     [Client.php:2584]
+06CB .|    |    |    |    => CAS_Client::getServerProxyValidateURL() [Client.php:2586]
+06CB .|    |    |    |    |    => CAS_Client::getURL() [Client.php:475]
+06CB .|    |    |    |    |    |    Final URI: http://test.sdd/web/?login= [Client.php:2886]
+06CB .|    |    |    |    |    <= 'http://test.sdd/web/?login='
+06CB .|    |    |    |    <= 'https://cas-auth.rpi.edu/cas/proxyValidate?service=http%3A%2F%2Ftest.sdd%2Fweb%2F%3Flogin%3D'
+06CB .|    |    |    |    => CAS_CurlRequest::_sendRequest() [AbstractRequest.php:191]
+06CB .|    |    |    |    |    Response Body: 
+06CB .|    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+06CB .|    |    |    |    |    	<cas:authenticationSuccess>
+06CB .|    |    |    |    |    		<cas:user>lbassb</cas:user>
+06CB .|    |    |    |    |    
+06CB .|    |    |    |    |    
+06CB .|    |    |    |    |    	</cas:authenticationSuccess>
+06CB .|    |    |    |    |    </cas:serviceResponse>
+06CB .|    |    |    |    |     [CurlRequest.php:133]
+06CB .|    |    |    |    <= true
+06CB .|    |    |    |    => CAS_Client::readExtraAttributesCas20(DOMNodeList) [Client.php:2646]
+06CB .|    |    |    |    |    Testing for rubycas style attributes [Client.php:2741]
+06CB .|    |    |    |    <= ''
+06CB .|    |    |    |    => CAS_Client::renameSession('ST-67925-Ug0SCkJAlz5Q3CYcpNeQ-cas') [Client.php:2675]
+06CB .|    |    |    |    |    Session ID: ST67925Ug0SCkJAlz5Q3CYcpNeQcas [Client.php:2977]
+06CB .|    |    |    |    |    Restoring old session vars [Client.php:2980]
+06CB .|    |    |    |    <= ''
+06CB .|    |    |    <= true
+06CB .|    |    |    PT `ST-67925-Ug0SCkJAlz5Q3CYcpNeQ-cas' was validated [Client.php:1095]
+06CB .|    |    |    => CAS_Client::getURL() [Client.php:1146]
+06CB .|    |    |    <= 'http://test.sdd/web/?login='
+06CB .|    |    |    => CAS_Client::getURL() [Client.php:1147]
+06CB .|    |    |    <= 'http://test.sdd/web/?login='
+06CB .|    |    |    Prepare redirect to : http://test.sdd/web/?login= [Client.php:1147]
+06CB .|    |    |    exit()
+06CB .|    |    |    -
+06CB .|    |    -
+06CB .|    -
+3B23 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+3B23 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+3B23 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+3B23 .|    |    Starting a new session [Client.php:710]
+3B23 .|    <= ''
+3B23 .<= ''
+3B23 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+3B23 .<= ''
+3B23 .=> phpCAS::forceAuthentication() [CAS.php:25]
+3B23 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+3B23 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+3B23 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+3B23 .|    |    |    |    user = `lbassb' [Client.php:1229]
+3B23 .|    |    |    |    proxies = "" [Client.php:1234]
+3B23 .|    |    |    <= true
+3B23 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+3B23 .|    |    <= true
+3B23 .|    |    no need to authenticate [Client.php:964]
+3B23 .|    <= true
+3B23 .|    no need to authenticate (user `lbassb' is already authenticated) [CAS.php:1097]
+3B23 .<= ''
+3B23 .=> phpCAS::checkAuthentication() [CAS.php:39]
+3B23 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+3B23 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+3B23 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+3B23 .|    |    |    |    user = `lbassb' [Client.php:1229]
+3B23 .|    |    |    |    proxies = "" [Client.php:1234]
+3B23 .|    |    |    <= true
+3B23 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+3B23 .|    |    <= true
+3B23 .|    |    user is authenticated [Client.php:1006]
+3B23 .|    <= true
+3B23 .<= true
+887D .START phpCAS-1.2.2 ****************** [CAS.php:478]
+887D .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+887D .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+887D .|    |    Starting a new session [Client.php:710]
+887D .|    <= ''
+887D .<= ''
+887D .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+887D .<= ''
+887D .=> phpCAS::checkAuthentication() [CAS.php:39]
+887D .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+887D .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+887D .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+887D .|    |    |    |    user = `lbassb' [Client.php:1229]
+887D .|    |    |    |    proxies = "" [Client.php:1234]
+887D .|    |    |    <= true
+887D .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+887D .|    |    <= true
+887D .|    |    user is authenticated [Client.php:1006]
+887D .|    <= true
+887D .<= true
+CAF3 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+CAF3 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+CAF3 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+CAF3 .|    |    Starting a new session [Client.php:710]
+CAF3 .|    <= ''
+CAF3 .<= ''
+CAF3 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+CAF3 .<= ''
+CAF3 .=> phpCAS::checkAuthentication() [CAS.php:39]
+CAF3 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+CAF3 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+CAF3 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+CAF3 .|    |    |    |    user = `lbassb' [Client.php:1229]
+CAF3 .|    |    |    |    proxies = "" [Client.php:1234]
+CAF3 .|    |    |    <= true
+CAF3 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+CAF3 .|    |    <= true
+CAF3 .|    |    user is authenticated [Client.php:1006]
+CAF3 .|    <= true
+CAF3 .<= true
+5C7F .START phpCAS-1.2.2 ****************** [CAS.php:478]
+5C7F .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+5C7F .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+5C7F .|    |    Starting a new session [Client.php:710]
+5C7F .|    <= ''
+5C7F .<= ''
+5C7F .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+5C7F .<= ''
+5C7F .=> phpCAS::checkAuthentication() [CAS.php:39]
+5C7F .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+5C7F .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+5C7F .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+5C7F .|    |    |    |    user = `lbassb' [Client.php:1229]
+5C7F .|    |    |    |    proxies = "" [Client.php:1234]
+5C7F .|    |    |    <= true
+5C7F .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+5C7F .|    |    <= true
+5C7F .|    |    user is authenticated [Client.php:1006]
+5C7F .|    <= true
+5C7F .<= true
+74C7 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+74C7 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+74C7 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+74C7 .|    |    Starting a new session [Client.php:710]
+74C7 .|    <= ''
+74C7 .<= ''
+74C7 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+74C7 .<= ''
+74C7 .=> phpCAS::checkAuthentication() [CAS.php:39]
+74C7 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+74C7 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+74C7 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+74C7 .|    |    |    |    user = `lbassb' [Client.php:1229]
+74C7 .|    |    |    |    proxies = "" [Client.php:1234]
+74C7 .|    |    |    <= true
+74C7 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+74C7 .|    |    <= true
+74C7 .|    |    user is authenticated [Client.php:1006]
+74C7 .|    <= true
+74C7 .<= true
+648B .START phpCAS-1.2.2 ****************** [CAS.php:478]
+648B .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+648B .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+648B .|    |    Starting a new session [Client.php:710]
+648B .|    <= ''
+648B .<= ''
+648B .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+648B .<= ''
+648B .=> phpCAS::checkAuthentication() [CAS.php:39]
+648B .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+648B .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+648B .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+648B .|    |    |    |    user = `lbassb' [Client.php:1229]
+648B .|    |    |    |    proxies = "" [Client.php:1234]
+648B .|    |    |    <= true
+648B .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+648B .|    |    <= true
+648B .|    |    user is authenticated [Client.php:1006]
+648B .|    <= true
+648B .<= true
+4019 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+4019 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+4019 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+4019 .|    |    Starting a new session [Client.php:710]
+4019 .|    <= ''
+4019 .<= ''
+4019 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+4019 .<= ''
+4019 .=> phpCAS::checkAuthentication() [CAS.php:39]
+4019 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+4019 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+4019 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+4019 .|    |    |    |    user = `lbassb' [Client.php:1229]
+4019 .|    |    |    |    proxies = "" [Client.php:1234]
+4019 .|    |    |    <= true
+4019 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+4019 .|    |    <= true
+4019 .|    |    user is authenticated [Client.php:1006]
+4019 .|    <= true
+4019 .<= true
+03D1 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+03D1 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+03D1 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+03D1 .|    |    Starting a new session [Client.php:710]
+03D1 .|    <= ''
+03D1 .<= ''
+03D1 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+03D1 .<= ''
+03D1 .=> phpCAS::checkAuthentication() [CAS.php:39]
+03D1 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+03D1 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+03D1 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+03D1 .|    |    |    |    user = `lbassb' [Client.php:1229]
+03D1 .|    |    |    |    proxies = "" [Client.php:1234]
+03D1 .|    |    |    <= true
+03D1 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+03D1 .|    |    <= true
+03D1 .|    |    user is authenticated [Client.php:1006]
+03D1 .|    <= true
+03D1 .<= true
+1E4D .START phpCAS-1.2.2 ****************** [CAS.php:478]
+1E4D .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+1E4D .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+1E4D .|    |    Starting a new session [Client.php:710]
+1E4D .|    <= ''
+1E4D .<= ''
+1E4D .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+1E4D .<= ''
+1E4D .=> phpCAS::checkAuthentication() [CAS.php:39]
+1E4D .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+1E4D .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+1E4D .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+1E4D .|    |    |    |    user = `lbassb' [Client.php:1229]
+1E4D .|    |    |    |    proxies = "" [Client.php:1234]
+1E4D .|    |    |    <= true
+1E4D .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+1E4D .|    |    <= true
+1E4D .|    |    user is authenticated [Client.php:1006]
+1E4D .|    <= true
+1E4D .<= true
+F6A3 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+F6A3 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+F6A3 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+F6A3 .|    |    Starting a new session [Client.php:710]
+F6A3 .|    <= ''
+F6A3 .<= ''
+F6A3 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+F6A3 .<= ''
+F6A3 .=> phpCAS::checkAuthentication() [CAS.php:39]
+F6A3 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+F6A3 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+F6A3 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+F6A3 .|    |    |    |    user = `lbassb' [Client.php:1229]
+F6A3 .|    |    |    |    proxies = "" [Client.php:1234]
+F6A3 .|    |    |    <= true
+F6A3 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+F6A3 .|    |    <= true
+F6A3 .|    |    user is authenticated [Client.php:1006]
+F6A3 .|    <= true
+F6A3 .<= true
+13FC .START phpCAS-1.2.2 ****************** [CAS.php:478]
+13FC .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+13FC .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+13FC .|    |    Starting a new session [Client.php:710]
+13FC .|    <= ''
+13FC .<= ''
+13FC .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+13FC .<= ''
+13FC .=> phpCAS::checkAuthentication() [CAS.php:39]
+13FC .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+13FC .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+13FC .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+13FC .|    |    |    |    user = `lbassb' [Client.php:1229]
+13FC .|    |    |    |    proxies = "" [Client.php:1234]
+13FC .|    |    |    <= true
+13FC .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+13FC .|    |    <= true
+13FC .|    |    user is authenticated [Client.php:1006]
+13FC .|    <= true
+13FC .<= true
+42A9 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+42A9 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+42A9 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+42A9 .|    |    Starting a new session [Client.php:710]
+42A9 .|    <= ''
+42A9 .<= ''
+42A9 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+42A9 .<= ''
+42A9 .=> phpCAS::checkAuthentication() [CAS.php:39]
+42A9 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+42A9 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+42A9 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+42A9 .|    |    |    |    user = `lbassb' [Client.php:1229]
+42A9 .|    |    |    |    proxies = "" [Client.php:1234]
+42A9 .|    |    |    <= true
+42A9 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+42A9 .|    |    <= true
+42A9 .|    |    user is authenticated [Client.php:1006]
+42A9 .|    <= true
+42A9 .<= true
+AF72 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+AF72 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+AF72 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+AF72 .|    |    Starting a new session [Client.php:710]
+AF72 .|    <= ''
+AF72 .<= ''
+AF72 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+AF72 .<= ''
+AF72 .=> phpCAS::checkAuthentication() [CAS.php:39]
+AF72 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+AF72 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+AF72 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+AF72 .|    |    |    |    user = `lbassb' [Client.php:1229]
+AF72 .|    |    |    |    proxies = "" [Client.php:1234]
+AF72 .|    |    |    <= true
+AF72 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+AF72 .|    |    <= true
+AF72 .|    |    user is authenticated [Client.php:1006]
+AF72 .|    <= true
+AF72 .<= true
+22A0 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+22A0 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+22A0 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+22A0 .|    |    Starting a new session [Client.php:710]
+22A0 .|    <= ''
+22A0 .<= ''
+22A0 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+22A0 .<= ''
+22A0 .=> phpCAS::checkAuthentication() [CAS.php:39]
+22A0 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+22A0 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+22A0 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+22A0 .|    |    |    |    user = `lbassb' [Client.php:1229]
+22A0 .|    |    |    |    proxies = "" [Client.php:1234]
+22A0 .|    |    |    <= true
+22A0 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+22A0 .|    |    <= true
+22A0 .|    |    user is authenticated [Client.php:1006]
+22A0 .|    <= true
+22A0 .<= true
+F5CF .START phpCAS-1.2.2 ****************** [CAS.php:478]
+F5CF .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+F5CF .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+F5CF .|    |    Starting a new session [Client.php:710]
+F5CF .|    <= ''
+F5CF .<= ''
+F5CF .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+F5CF .<= ''
+F5CF .=> phpCAS::checkAuthentication() [CAS.php:39]
+F5CF .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+F5CF .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+F5CF .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+F5CF .|    |    |    |    user = `lbassb' [Client.php:1229]
+F5CF .|    |    |    |    proxies = "" [Client.php:1234]
+F5CF .|    |    |    <= true
+F5CF .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+F5CF .|    |    <= true
+F5CF .|    |    user is authenticated [Client.php:1006]
+F5CF .|    <= true
+F5CF .<= true
+7388 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+7388 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+7388 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+7388 .|    |    Starting a new session [Client.php:710]
+7388 .|    <= ''
+7388 .<= ''
+7388 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+7388 .<= ''
+7388 .=> phpCAS::checkAuthentication() [CAS.php:39]
+7388 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+7388 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+7388 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+7388 .|    |    |    |    user = `lbassb' [Client.php:1229]
+7388 .|    |    |    |    proxies = "" [Client.php:1234]
+7388 .|    |    |    <= true
+7388 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+7388 .|    |    <= true
+7388 .|    |    user is authenticated [Client.php:1006]
+7388 .|    <= true
+7388 .<= true
+1530 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+1530 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+1530 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+1530 .|    |    Starting a new session [Client.php:710]
+1530 .|    <= ''
+1530 .<= ''
+1530 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+1530 .<= ''
+1530 .=> phpCAS::checkAuthentication() [CAS.php:39]
+1530 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+1530 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+1530 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+1530 .|    |    |    |    user = `lbassb' [Client.php:1229]
+1530 .|    |    |    |    proxies = "" [Client.php:1234]
+1530 .|    |    |    <= true
+1530 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+1530 .|    |    <= true
+1530 .|    |    user is authenticated [Client.php:1006]
+1530 .|    <= true
+1530 .<= true
+6307 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+6307 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+6307 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+6307 .|    |    Starting a new session [Client.php:710]
+6307 .|    <= ''
+6307 .<= ''
+6307 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+6307 .<= ''
+6307 .=> phpCAS::checkAuthentication() [CAS.php:39]
+6307 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+6307 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+6307 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+6307 .|    |    |    |    user = `lbassb' [Client.php:1229]
+6307 .|    |    |    |    proxies = "" [Client.php:1234]
+6307 .|    |    |    <= true
+6307 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+6307 .|    |    <= true
+6307 .|    |    user is authenticated [Client.php:1006]
+6307 .|    <= true
+6307 .<= true
+5371 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+5371 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+5371 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+5371 .|    |    Starting a new session [Client.php:710]
+5371 .|    <= ''
+5371 .<= ''
+5371 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+5371 .<= ''
+5371 .=> phpCAS::checkAuthentication() [CAS.php:39]
+5371 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+5371 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+5371 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+5371 .|    |    |    |    user = `lbassb' [Client.php:1229]
+5371 .|    |    |    |    proxies = "" [Client.php:1234]
+5371 .|    |    |    <= true
+5371 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+5371 .|    |    <= true
+5371 .|    |    user is authenticated [Client.php:1006]
+5371 .|    <= true
+5371 .<= true
+EBD3 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+EBD3 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+EBD3 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+EBD3 .|    |    Starting a new session [Client.php:710]
+EBD3 .|    <= ''
+EBD3 .<= ''
+EBD3 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+EBD3 .<= ''
+EBD3 .=> phpCAS::checkAuthentication() [CAS.php:39]
+EBD3 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+EBD3 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+EBD3 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+EBD3 .|    |    |    |    user = `lbassb' [Client.php:1229]
+EBD3 .|    |    |    |    proxies = "" [Client.php:1234]
+EBD3 .|    |    |    <= true
+EBD3 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+EBD3 .|    |    <= true
+EBD3 .|    |    user is authenticated [Client.php:1006]
+EBD3 .|    <= true
+EBD3 .<= true
+D79C .START phpCAS-1.2.2 ****************** [CAS.php:478]
+D79C .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+D79C .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+D79C .|    |    Starting a new session [Client.php:710]
+D79C .|    <= ''
+D79C .<= ''
+D79C .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+D79C .<= ''
+D79C .=> phpCAS::checkAuthentication() [CAS.php:39]
+D79C .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+D79C .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+D79C .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+D79C .|    |    |    |    user = `lbassb' [Client.php:1229]
+D79C .|    |    |    |    proxies = "" [Client.php:1234]
+D79C .|    |    |    <= true
+D79C .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+D79C .|    |    <= true
+D79C .|    |    user is authenticated [Client.php:1006]
+D79C .|    <= true
+D79C .<= true
+F4B3 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+F4B3 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+F4B3 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+F4B3 .|    |    Starting a new session [Client.php:710]
+F4B3 .|    <= ''
+F4B3 .<= ''
+F4B3 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+F4B3 .<= ''
+F4B3 .=> phpCAS::checkAuthentication() [CAS.php:39]
+F4B3 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+F4B3 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+F4B3 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+F4B3 .|    |    |    |    user = `lbassb' [Client.php:1229]
+F4B3 .|    |    |    |    proxies = "" [Client.php:1234]
+F4B3 .|    |    |    <= true
+F4B3 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+F4B3 .|    |    <= true
+F4B3 .|    |    user is authenticated [Client.php:1006]
+F4B3 .|    <= true
+F4B3 .<= true
+68BA .START phpCAS-1.2.2 ****************** [CAS.php:478]
+68BA .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+68BA .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+68BA .|    |    Starting a new session [Client.php:710]
+68BA .|    <= ''
+68BA .<= ''
+68BA .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+68BA .<= ''
+68BA .=> phpCAS::checkAuthentication() [CAS.php:39]
+68BA .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+68BA .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+68BA .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+68BA .|    |    |    |    user = `lbassb' [Client.php:1229]
+68BA .|    |    |    |    proxies = "" [Client.php:1234]
+68BA .|    |    |    <= true
+68BA .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+68BA .|    |    <= true
+68BA .|    |    user is authenticated [Client.php:1006]
+68BA .|    <= true
+68BA .<= true
+B1CB .START phpCAS-1.2.2 ****************** [CAS.php:478]
+B1CB .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+B1CB .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+B1CB .|    |    Starting a new session [Client.php:710]
+B1CB .|    <= ''
+B1CB .<= ''
+B1CB .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+B1CB .<= ''
+B1CB .=> phpCAS::checkAuthentication() [CAS.php:39]
+B1CB .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+B1CB .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+B1CB .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+B1CB .|    |    |    |    user = `lbassb' [Client.php:1229]
+B1CB .|    |    |    |    proxies = "" [Client.php:1234]
+B1CB .|    |    |    <= true
+B1CB .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+B1CB .|    |    <= true
+B1CB .|    |    user is authenticated [Client.php:1006]
+B1CB .|    <= true
+B1CB .<= true
+F74F .START phpCAS-1.2.2 ****************** [CAS.php:478]
+F74F .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+F74F .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+F74F .|    |    Starting a new session [Client.php:710]
+F74F .|    <= ''
+F74F .<= ''
+F74F .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+F74F .<= ''
+F74F .=> phpCAS::checkAuthentication() [CAS.php:39]
+F74F .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+F74F .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+F74F .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+F74F .|    |    |    |    user = `lbassb' [Client.php:1229]
+F74F .|    |    |    |    proxies = "" [Client.php:1234]
+F74F .|    |    |    <= true
+F74F .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+F74F .|    |    <= true
+F74F .|    |    user is authenticated [Client.php:1006]
+F74F .|    <= true
+F74F .<= true
+6374 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+6374 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+6374 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+6374 .|    |    Starting a new session [Client.php:710]
+6374 .|    <= ''
+6374 .<= ''
+6374 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+6374 .<= ''
+6374 .=> phpCAS::checkAuthentication() [CAS.php:39]
+6374 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+6374 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+6374 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+6374 .|    |    |    |    user = `lbassb' [Client.php:1229]
+6374 .|    |    |    |    proxies = "" [Client.php:1234]
+6374 .|    |    |    <= true
+6374 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+6374 .|    |    <= true
+6374 .|    |    user is authenticated [Client.php:1006]
+6374 .|    <= true
+6374 .<= true
+5FE6 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+5FE6 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+5FE6 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+5FE6 .|    |    Starting a new session [Client.php:710]
+5FE6 .|    <= ''
+5FE6 .<= ''
+5FE6 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+5FE6 .<= ''
+5FE6 .=> phpCAS::checkAuthentication() [CAS.php:39]
+5FE6 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+5FE6 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+5FE6 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+5FE6 .|    |    |    |    user = `lbassb' [Client.php:1229]
+5FE6 .|    |    |    |    proxies = "" [Client.php:1234]
+5FE6 .|    |    |    <= true
+5FE6 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+5FE6 .|    |    <= true
+5FE6 .|    |    user is authenticated [Client.php:1006]
+5FE6 .|    <= true
+5FE6 .<= true
+2709 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+2709 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+2709 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+2709 .|    |    Starting a new session [Client.php:710]
+2709 .|    <= ''
+2709 .<= ''
+2709 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+2709 .<= ''
+2709 .=> phpCAS::checkAuthentication() [CAS.php:39]
+2709 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+2709 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+2709 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+2709 .|    |    |    |    user = `lbassb' [Client.php:1229]
+2709 .|    |    |    |    proxies = "" [Client.php:1234]
+2709 .|    |    |    <= true
+2709 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+2709 .|    |    <= true
+2709 .|    |    user is authenticated [Client.php:1006]
+2709 .|    <= true
+2709 .<= true
+0362 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+0362 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+0362 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+0362 .|    |    Starting a new session [Client.php:710]
+0362 .|    <= ''
+0362 .<= ''
+0362 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+0362 .<= ''
+0362 .=> phpCAS::checkAuthentication() [CAS.php:39]
+0362 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+0362 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+0362 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+0362 .|    |    |    |    user = `lbassb' [Client.php:1229]
+0362 .|    |    |    |    proxies = "" [Client.php:1234]
+0362 .|    |    |    <= true
+0362 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+0362 .|    |    <= true
+0362 .|    |    user is authenticated [Client.php:1006]
+0362 .|    <= true
+0362 .<= true
+DB44 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+DB44 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [CAS.php:17]
+DB44 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+DB44 .|    |    Starting a new session [Client.php:710]
+DB44 .|    <= ''
+DB44 .<= ''
+DB44 .=> phpCAS::setNoCasServerValidation() [CAS.php:18]
+DB44 .<= ''
+DB44 .=> phpCAS::checkAuthentication() [CAS.php:39]
+DB44 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+DB44 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+DB44 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+DB44 .|    |    |    |    user = `lbassb' [Client.php:1229]
+DB44 .|    |    |    |    proxies = "" [Client.php:1234]
+DB44 .|    |    |    <= true
+DB44 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+DB44 .|    |    <= true
+DB44 .|    |    user is authenticated [Client.php:1006]
+DB44 .|    <= true
+DB44 .<= true
