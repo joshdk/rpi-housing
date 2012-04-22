@@ -57,8 +57,7 @@ class database{
 	//Execute a prepared statement
 	//ex $db->execute(""my query",array("john doe"));
 	public function execute($data){
-		if(($tmp=$this->resource->execute($data))){
-			//$this->resource=$tmp;
+		if($this->resource->execute($data)){
 			return true;
 		}
 		return false;
@@ -82,6 +81,14 @@ class database{
 			return $this->resource->fetchAll(PDO::FETCH_ASSOC);
 		}
 		return false;
+	}
+
+
+	public function count(){
+		if($this->resource != NULL){
+			return $this->resource->rowCount();
+		}
+		return 0;
 	}
 
 
