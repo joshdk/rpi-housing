@@ -1,0 +1,10 @@
+RewriteEngine on
+
+RewriteRule ^buildings/$          rest/buildings/node.php [L]
+RewriteRule ^buildings/(\d+)/$    rest/buildings/node.php?building=$1 [L]
+
+RewriteRule ^buildings/(\d+)/rooms/$          rest/rooms/node.php?building=$1 [L]
+RewriteRule ^buildings/(\d+)/rooms/(\d+)/$    rest/rooms/node.php?building=$1&room=$2 [L]
+
+RewriteRule ^buildings/(\d+)/rooms/(\d+)/users/$          rest/users/node.php?building=$1&room=$2 [L]
+RewriteRule ^buildings/(\d+)/rooms/(\d+)/users/(\d+)/$    rest/users/node.php?building=$1&room=$2&user=$3 [L]
