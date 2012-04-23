@@ -56,7 +56,7 @@ class Users {
 
 	private function connect(){
 		$db = new database();
-		require($_SERVER['DOCUMENT_ROOT'] . '.../api/core/config.php');
+		require($_SERVER['DOCUMENT_ROOT'] . '/api/core/config.php');
 
 		if( $db->connect($ROLES["remote"]) )
 			echo '';
