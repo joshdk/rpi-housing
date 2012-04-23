@@ -2,14 +2,12 @@
 
 
 <?php
+	include_once($_SERVER['DOCUMENT_ROOT'] . '/api/core/cas.php');
+	include_once($_SERVER['DOCUMENT_ROOT'] . '/api/core/config.php');
+	include_once($_SERVER['DOCUMENT_ROOT'] . '/web/data/PHP/users.php' );
 
-	//include_once($_SERVER['DOCUMENT_ROOT'] . '.../web/data/CAS.php');
-	include_once($_SERVER['DOCUMENT_ROOT'] . '.../api/core/CAS.php');
-	include_once($_SERVER['DOCUMENT_ROOT'] . '.../api/core/config.php');
-	include_once( 'data/PHP/users.php' );
-	
 	$casfn = new cas();
-	
+
 	phpCAS::setDebug();
 
 	//Connect to CAS server
@@ -24,7 +22,7 @@
 	if (isset($_REQUEST['login'])) {
 		Users::login( $casfn );
 	}
-	
+
 	Users::verfiyUser( $casfn );
 
 ?>
@@ -36,7 +34,7 @@
 	<title>RPI Housing</title>
 	<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="data/CSS/style.css" />
-	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css" media="all" /> 
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css" media="all" />
 
 </head>
 <body>
@@ -59,25 +57,25 @@
 	</div>
 	<div id="page">
 		<div id="content">
-			
+
 			Main content goes here!
-			
+
 		</div>
 		<div id="sidebar">
 
 			<div id="sidebar-top">
-			
+
 				<?php
 					//Logged In
-					if ($_SESSION['auth'] == true) {				
+					if ($_SESSION['auth'] == true) {
 				?>
 					<h3><?php echo $_SESSION['user'] ?> is logged in</h3>
 					<ul>
 						<li> <A href="?logout=">Logout</A> </li>
 						<li></li>
 					</ul>
-							
-						
+
+
 				<?php
 					//Not Logged In
 					} else {
@@ -86,20 +84,20 @@
 					<ul>
 						<li> <A href="?login=">Click Here to Login</A> </li>
 						<li></li>
-					</ul>	
+					</ul>
 				<?php
 					}
 				?>
-								
+
 			</div>
-			
+
 			<div id="sidebar-bottom">
 				<!--
 				<h3>Quick Search</h3>
-				
+
 				<ul class="">
-					<li><span class="label">Building:</span> 
-					
+					<li><span class="label">Building:</span>
+
 						<select id="quick-building" name="building" class="dropdown">
 							<option value="all">All</option>
 							<option value="blitman">Blitman Residence Commons</option>
@@ -116,13 +114,13 @@
 							<option value="stacwyck">Stacwyck Apartments</option>
 							<option value="Warren">Warren Hall</option>
 						</select>
-					
+
 					</li>
 					<li class="last"><input id="quick-search" type="submit" value="Search" /></li>
 				</ul>
 				-->
 			</div>
-			
+
 		</div>
 		<br class="clearfix" />
 	</div>
