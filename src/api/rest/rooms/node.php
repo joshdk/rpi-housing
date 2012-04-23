@@ -1,5 +1,5 @@
 <?php
-	include_once($_SERVER['DOCUMENT_ROOT'].'/api/buildings/buildings.php');
+	include_once($_SERVER['DOCUMENT_ROOT'].'/api/rest/rooms/crud.php');
 
 
 
@@ -28,10 +28,14 @@ function get($params){
 
 	$db=new database();
 	if($db->connect($ROLES['remote'])){
-		if(isset($params['id'])){
-			$json['data']=read($db,array('id'=>$params['id']));
+		if(isset($params['building']) && isset($params['room'])){
+			$json['data']=read($db,array('building'=>$params['building'],'room'=>$params['room']));
 		}else{
-			$json['data']=read($db,array());
+			$json['data']=read($db,array('building'=>$params['building']));
+		}
+		if(count($json['data']) < 1){
+			$json['errors']=true;
+			$json['errmsg']="No such room";
 		}
 	}else{
 		$json['errors']=true;
@@ -47,14 +51,16 @@ function get($params){
 
 
 $params=rest_prepare();
-$json=null;
 //echo '<pre>';
 //print_r($params);
+//print_r($_SERVER);
 //echo '</pre>';
 switch($_SERVER['REQUEST_METHOD']){
 	case 'GET':
 		//echo 'GET';
+		$json=null;
 		$json=get($params);
+		echo json_encode($json);
 		break;
 	case 'POST':
 		echo 'POST';
@@ -69,7 +75,6 @@ switch($_SERVER['REQUEST_METHOD']){
 		echo 'UNKNOWN...';
 }
 
-echo json_encode($json);
 
 
 
