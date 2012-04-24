@@ -1,4 +1,0 @@
-RewriteEngine on
-#RewriteRule ^(.*)$ /node.php?id=$1&key=$2 [L]
-RewriteRule ^$ node.php [L]
-RewriteRule ^(\d+)$ node.php?id=$1 [L]
