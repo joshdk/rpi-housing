@@ -16,6 +16,7 @@
 	}
 	else
 		echo 'Warning: Your are not connected to the RPI network!';
+
 										
 ?>
 	
@@ -74,12 +75,15 @@
          "aaSorting":[[1, "desc"]]		 
 	} );
 	
-	 $(document).ready(function(){
-            $('.add').click(function(){
-				var id = $(this).attr("name");
-				alert(id); 
-				$.post("search.php", { id: id } );
-            });
-        });
+
+	$('.add').click(function(){
+		var id = $(this).attr("name");
+		alert(id);
+		$.post("pages/search.php", { id: id }, function(data) {
+				//$('#dialog-message').append(data);
+
+		});
+	});
+
 			
 </script>
