@@ -1,5 +1,5 @@
 <?php
-	include_once( '../data/PHP/admin.php' );
+	include_once($_SERVER['DOCUMENT_ROOT'] . '/web/data/PHP/admin.php' );
 	
 	if( isset( $_POST['username'] ) ){	
 		Admin::addAdmin( $_POST['username'], '', '', $_POST['username'].'@rpi.edu'  );		

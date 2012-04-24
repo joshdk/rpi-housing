@@ -1,5 +1,5 @@
 <?php
-	include_once($_SERVER['DOCUMENT_ROOT'] . '.../api/core/database.php');
+	include_once($_SERVER['DOCUMENT_ROOT'] . '/api/core/database.php');
 	
 	$room_id = $_POST['room_id'];
 

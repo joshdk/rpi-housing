@@ -17364,3 +17364,77 @@ D986 .<= true
 229C .|    |    user is authenticated [Client.php:1006]
 229C .|    <= true
 229C .<= true
+6520 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+6520 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [cas.php:17]
+6520 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+6520 .|    |    Starting a new session [Client.php:710]
+6520 .|    <= ''
+6520 .<= ''
+6520 .=> phpCAS::setNoCasServerValidation() [cas.php:18]
+6520 .<= ''
+6520 .=> phpCAS::checkAuthentication() [cas.php:39]
+6520 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+6520 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+6520 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+6520 .|    |    |    |    no user found [Client.php:1239]
+6520 .|    |    |    <= false
+6520 .|    |    |    no ticket found [Client.php:1120]
+6520 .|    |    <= false
+6520 .|    |    user is not authenticated (cache reset) [Client.php:1036]
+6520 .|    |    => CAS_Client::redirectToCas(true) [Client.php:1037]
+6520 .|    |    |    => CAS_Client::getServerLoginURL(true, false) [Client.php:1255]
+6520 .|    |    |    |    => CAS_Client::getURL() [Client.php:356]
+6520 .|    |    |    |    |    Final URI: http://test.sdd/web/ [Client.php:2886]
+6520 .|    |    |    |    <= 'http://test.sdd/web/'
+6520 .|    |    |    <= 'https://cas-auth.rpi.edu/cas/login?service=http%3A%2F%2Ftest.sdd%2Fweb%2F&gateway=true'
+6520 .|    |    |    Redirect to : https://cas-auth.rpi.edu/cas/login?service=http%3A%2F%2Ftest.sdd%2Fweb%2F&gateway=true [Client.php:1257]
+6520 .|    |    |    exit()
+6520 .|    |    |    -
+6520 .|    |    -
+6520 .|    -
+8B43 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+8B43 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [cas.php:17]
+8B43 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+8B43 .|    |    Starting a new session [Client.php:710]
+8B43 .|    <= ''
+8B43 .<= ''
+8B43 .=> phpCAS::setNoCasServerValidation() [cas.php:18]
+8B43 .<= ''
+8B43 .=> phpCAS::checkAuthentication() [cas.php:39]
+8B43 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+8B43 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+8B43 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+8B43 .|    |    |    |    no user found [Client.php:1239]
+8B43 .|    |    |    <= false
+8B43 .|    |    |    no ticket found [Client.php:1120]
+8B43 .|    |    <= false
+8B43 .|    <= false
+8B43 .<= false
+A955 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+A955 .=> phpCAS::client('2.0', 'cas-auth.rpi.edu', 443, '/cas') [cas.php:17]
+A955 .|    => CAS_Client::__construct('2.0', false, 'cas-auth.rpi.edu', 443, '/cas', true) [CAS.php:379]
+A955 .|    |    Starting a new session [Client.php:710]
+A955 .|    <= ''
+A955 .<= ''
+A955 .=> phpCAS::setNoCasServerValidation() [cas.php:18]
+A955 .<= ''
+A955 .=> phpCAS::checkAuthentication() [cas.php:39]
+A955 .|    => CAS_Client::checkAuthentication() [CAS.php:1053]
+A955 .|    |    => CAS_Client::isAuthenticated() [Client.php:1005]
+A955 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+A955 .|    |    |    |    no user found [Client.php:1239]
+A955 .|    |    |    <= false
+A955 .|    |    |    no ticket found [Client.php:1120]
+A955 .|    |    <= false
+A955 .|    |    user is not authenticated (cache reset) [Client.php:1036]
+A955 .|    |    => CAS_Client::redirectToCas(true) [Client.php:1037]
+A955 .|    |    |    => CAS_Client::getServerLoginURL(true, false) [Client.php:1255]
+A955 .|    |    |    |    => CAS_Client::getURL() [Client.php:356]
+A955 .|    |    |    |    |    Final URI: http://test.sdd/web/ [Client.php:2886]
+A955 .|    |    |    |    <= 'http://test.sdd/web/'
+A955 .|    |    |    <= 'https://cas-auth.rpi.edu/cas/login?service=http%3A%2F%2Ftest.sdd%2Fweb%2F&gateway=true'
+A955 .|    |    |    Redirect to : https://cas-auth.rpi.edu/cas/login?service=http%3A%2F%2Ftest.sdd%2Fweb%2F&gateway=true [Client.php:1257]
+A955 .|    |    |    exit()
+A955 .|    |    |    -
+A955 .|    |    -
+A955 .|    -
