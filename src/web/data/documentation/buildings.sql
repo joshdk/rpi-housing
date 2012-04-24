@@ -6,3 +6,11 @@ INSERT INTO buildings(
 INSERT INTO buildings(
             name, location, description)
     VALUES ('Davison', '110 Eighth St, Troy, NY' , 'Davison and Nugent are upper-class halls that border a courtyard designed for frisbee, football, and outdoor relaxation. Rooms have either private or semi-private baths and are air cooled. Each of the four floors includes a lounge and a study space. First floors feature a kitchenette and large lounge. All double rooms have a privacy wall in the center of the room. This privacy wall is not shown in the floor plans.');
+
+INSERT INTO buildings(
+            name, location, description)
+    VALUES ('North', '110 Eighth St, Troy, NY' , 'North Hall is conveniently located near the main campus on Sage Avenue and houses 87 upper-class students. Nearly half of the rooms are singles, and the rest of the rooms are doubles.');
+
+INSERT INTO buildings(
+            name, location, description)
+    VALUES ('Warren', '110 Eighth St, Troy, NY' , 'Warren houses approximately 100 upperclass students in double rooms. Each room has a private bath and is divided by a wardrobe into semi-private living areas. This privacy wall is not shown in the floor plans.');

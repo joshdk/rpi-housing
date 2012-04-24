@@ -1,6 +1,6 @@
 $().ready(function() {	
+	
 	mboxRegister( '.add', 'pages/popup_registerStudents.php', 'Register Student' );
-});
 
 //Opens jQuery UI Dialog Box For the Lottery Status
 function mboxRegister( trigger, source, title ) {
@@ -21,7 +21,8 @@ function mboxRegister( trigger, source, title ) {
 					width: 400,
 					open: function() {
 					//display correct dialog content
-					$("#dialog-message").load(source);}
+					//$("#dialog-message").load(source);
+					}
 					};
 			$("#dialog-message").dialog(dialogOpts);    //end dialog
 			$("#dialog-message").dialog("open");
@@ -29,3 +30,12 @@ function mboxRegister( trigger, source, title ) {
 		}
 	);				
 }
+
+
+$('.add').click(function(){
+		var id = $(this).attr("name");
+		$.post("pages/popup_registerStudents.php", { room_id: id }, function(data) {
+				$('#dialog-message').html(data);
+		});		
+	});
+});

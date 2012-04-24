@@ -51,8 +51,8 @@
 						<td>0</td>
 						<td><?php echo $row['totalpeople']?></td>
 						<?php if( isset($_SESSION['admin']) && $_SESSION['admin'] ){ ?>
-						<td>							
-							<input class="add" type="submit" name="<?php echo $row['room_id']?>" value="Add Room" />						
+						<td id='button' class='but'>							
+							<input class="add" type="submit" name="<?php echo $row['room_id']?>" value="Select" />						
 						</td>
 						<?php } ?>
 					</tr>	
@@ -75,15 +75,5 @@
          "aaSorting":[[1, "desc"]]		 
 	} );
 	
-
-	$('.add').click(function(){
-		var id = $(this).attr("name");
-		alert(id);
-		$.post("pages/search.php", { id: id }, function(data) {
-				//$('#dialog-message').append(data);
-
-		});
-	});
-
 			
 </script>
