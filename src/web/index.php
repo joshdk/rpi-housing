@@ -3,39 +3,30 @@
 
 <?php
 
-	include_once($_SERVER['DOCUMENT_ROOT'] . '.../web/data/CAS.php');
+	//include_once($_SERVER['DOCUMENT_ROOT'] . '.../web/data/CAS.php');
+	include_once($_SERVER['DOCUMENT_ROOT'] . '.../api/core/CAS.php');
 	include_once($_SERVER['DOCUMENT_ROOT'] . '.../api/core/config.php');
+	include_once( 'data/PHP/users.php' );
 	
 	$casfn = new cas();
-
+	
 	phpCAS::setDebug();
 
 	//Connect to CAS server
 	$casfn->connect($CAS);
 
-	//Login
-	if (isset($_REQUEST['logout'])) {
-		$casfn->logout();
-	}
 	//Logout
+	if ( isset($_REQUEST['logout'])) {
+		Users::logout( $casfn );
+	}
+
+	//Login
 	if (isset($_REQUEST['login'])) {
-		$casfn->login();
+		Users::login( $casfn );
 	}
 	
-	//Authenticated Variable
-	$auth = $casfn->is_authenticated();
-	
-	//Session Variables
-	if( $auth ){
-		 $_SESSION['auth'] = true;
-		 $_SESSION['user'] = $casfn->get_user();
-		 //$_SESSION['cas'] = $casfn;
-	}
-	else{
-		$_SESSION['auth'] = false;
-		$_SESSION['user'] = null;
-		//$_SESSION['cas'] = null;
-	}
+	Users::verfiyUser( $casfn );
+
 ?>
 
 
@@ -46,7 +37,6 @@
 	<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="data/CSS/style.css" />
 	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css" media="all" /> 
-
 
 </head>
 <body>
@@ -104,6 +94,7 @@
 			</div>
 			
 			<div id="sidebar-bottom">
+				<!--
 				<h3>Quick Search</h3>
 				
 				<ul class="">
@@ -129,6 +120,7 @@
 					</li>
 					<li class="last"><input id="quick-search" type="submit" value="Search" /></li>
 				</ul>
+				-->
 			</div>
 			
 		</div>

@@ -1,26 +1,31 @@
-
-
-$('#advanced-search').click(function(e) {
-	
-	
-	//Search Stuff here
-	
-	
-	
+$().ready(function() {	
+	mboxRegister( '.add', 'pages/popup_registerStudents.php', 'Register Student' );
 });
 
-
-$('#add-to-queue').click(function(e) {
+//Opens jQuery UI Dialog Box For the Lottery Status
+function mboxRegister( trigger, source, title ) {
 			
-	$('input[type=checkbox]').each(function () {
-		if(this.checked){
-			alert( $(this).val() );
-		}  
-	});
-	
-});
-
-
-
-
-
+	$(trigger).click(
+		function (){	
+			//define config object
+			$.fx.speeds._default = 500;
+			var dialogOpts = {
+					title: title,
+					modal: true,
+					autoOpen: false,
+					show: "blind",
+					closeOnEscape: true,
+					draggable: false,
+					resizable: false,
+					height: 165,
+					width: 400,
+					open: function() {
+					//display correct dialog content
+					$("#dialog-message").load(source);}
+					};
+			$("#dialog-message").dialog(dialogOpts);    //end dialog
+			$("#dialog-message").dialog("open");
+			return false;
+		}
+	);				
+}

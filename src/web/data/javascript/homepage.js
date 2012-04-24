@@ -1,13 +1,11 @@
 
 $().ready(function() {	
-	mboxLottery( '#lotteryStatus', 'pages/popup_lotteryStatus.php', 'Lottery Status' );
-	mbox( '#roomInvites', 'pages/popup_roomInvites.php', 'View Queue' );
-	mbox( '#viewQueue', 'pages/popup_viewQueue.php', 'Room Invites' ); 
-	mbox( '#searchFriends', 'pages/popup_searchFriends.php', 'Search Friends' ); 
+	mboxStatus( '#roomStatus', 'pages/popup_roomStatus.php', 'Room Status' );
+	mboxCreate( '#createAdmin', 'pages/popup_createAdmin.php', 'Create Admin' );
 });	
 
 //Opens jQuery UI Dialog Box For the Lottery Status
-function mboxLottery( trigger, source, title ) {
+function mboxStatus( trigger, source, title ) {
 			
 	$(trigger).click(
 		function (){		
@@ -21,7 +19,7 @@ function mboxLottery( trigger, source, title ) {
 					closeOnEscape: true,
 					draggable: false,
 					resizable: false,
-					height: 165,
+					height: 140,
 					width: 400,
 					open: function() {
 					//display correct dialog content
@@ -34,8 +32,8 @@ function mboxLottery( trigger, source, title ) {
 	);				
 }
 
-//Opens jQuery UI Dialog Box
-function mbox( trigger, source, title ) {
+//Opens jQuery UI Dialog Box For the Create Admin
+function mboxCreate( trigger, source, title ) {
 			
 	$(trigger).click(
 		function (){		
@@ -48,8 +46,9 @@ function mbox( trigger, source, title ) {
 					show: "blind",
 					closeOnEscape: true,
 					draggable: false,
-					height: 700,
-					width: 700,
+					resizable: false,
+					height: 140,
+					width: 400,
 					open: function() {
 					//display correct dialog content
 					$("#dialog-message").load(source);}
@@ -60,6 +59,8 @@ function mbox( trigger, source, title ) {
 		}
 	);				
 }
+
+		
 
 
 
