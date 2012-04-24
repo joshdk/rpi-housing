@@ -8,7 +8,7 @@
 	
 	//Connect to Database
 	if( $db->connect($ROLES["remote"]) ){
-		$query = "	SELECT r.id, b.name, r.number, r.totalpeople, r.squarefeet
+		$query = "	SELECT r.room_id, b.name, r.number, r.totalpeople, r.squarefeet
 				FROM rooms r INNER JOIN buildings b ON r.building_id = b.building_id
 				";
 				
@@ -36,7 +36,7 @@
 						<th>Number</th>
 						<th>Occupents</th>
 						<th>Capacity</th>
-						<?php if( isset($_SESSION['admin'])){ ?>
+						<?php if( isset($_SESSION['admin']) && $_SESSION['admin'] ){ ?>
 						<th>Register</th>
 						<?php } ?>
 					</tr>
@@ -49,9 +49,9 @@
 						<td><?php echo $row['number']?></td>
 						<td>0</td>
 						<td><?php echo $row['totalpeople']?></td>
-						<?php if( $_SESSION['admin'] ){ ?>
+						<?php if( isset($_SESSION['admin']) && $_SESSION['admin'] ){ ?>
 						<td>							
-							<input class="add" type="submit" name="<?php echo $row['id']?>" value="Add Room" />						
+							<input class="add" type="submit" name="<?php echo $row['room_id']?>" value="Add Room" />						
 						</td>
 						<?php } ?>
 					</tr>	
