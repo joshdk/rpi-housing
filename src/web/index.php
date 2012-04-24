@@ -2,17 +2,10 @@
 
 
 <?php
-	include_once($_SERVER['DOCUMENT_ROOT'] . '/api/core/cas.php');
-	include_once($_SERVER['DOCUMENT_ROOT'] . '/api/core/config.php');
-	include_once($_SERVER['DOCUMENT_ROOT'] . '/web/data/PHP/users.php' );
-
-<<<<<<< HEAD
 	include_once($_SERVER['DOCUMENT_ROOT'] . '.../api/core/cas.php');
 	include_once($_SERVER['DOCUMENT_ROOT'] . '.../api/core/config.php');
 	include_once( 'data/PHP/users.php' );
 	
-=======
->>>>>>> 27e4b146cdec23026f6eaf64a42c00a5a8b11d83
 	$casfn = new cas();
 
 	phpCAS::setDebug();
