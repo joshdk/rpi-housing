@@ -8,7 +8,7 @@
 	
 	//Connect to Database
 	if( $db->connect($ROLES["remote"]) ){
-		$query = "	SELECT r.room_id, b.name, r.number, r.totalpeople, r.squarefeet
+		$query = "	SELECT r.currentpeople, r.room_id, b.name, r.number, r.totalpeople, r.squarefeet
 				FROM rooms r INNER JOIN buildings b ON r.building_id = b.building_id
 				";
 				
@@ -48,7 +48,7 @@
 					<tr>
 						<td><?php echo $row['name']?></td>
 						<td><?php echo $row['number']?></td>
-						<td>0</td>
+						<td><?php echo $row['currentpeople']?></td>
 						<td><?php echo $row['totalpeople']?></td>
 						<?php if( isset($_SESSION['admin']) && $_SESSION['admin'] ){ ?>
 						<td id='button' class='but'>							
@@ -62,9 +62,9 @@
 			</table>
 		</div>	
 	
-	
+<div id="dialog-message-search"></div>	
 </div>
-<div id="dialog-message"></div>
+
 <br class="clearfix" />
 <script type="text/javascript" src="data/javascript/search.js"></script>
 <script type="text/javascript" language="javascript" src="data/javascript/jquery.dataTables.js"></script>
@@ -74,6 +74,7 @@
 		"sPaginationType":"full_numbers",
          "aaSorting":[[1, "desc"]]		 
 	} );
+	
 	
 			
 </script>

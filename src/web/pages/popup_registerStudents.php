@@ -1,27 +1,37 @@
 <?php
 	include_once($_SERVER['DOCUMENT_ROOT'] . '/api/core/database.php');
-	
-	$room_id = $_POST['room_id'];
-
-	$db = new database();
-	require($_SERVER['DOCUMENT_ROOT'] . '.../api/core/config.php');
-
-	if( $db->connect($ROLES["remote"]) )
-		echo '';
-	else
-		echo 'Error Cannot Connect to Database';
+	include_once($_SERVER['DOCUMENT_ROOT'] . '/web/data/PHP/admin.php' );
 	
 	
-	$query = "	SELECT b.name, r.number
-				FROM rooms r JOIN buildings b ON r.building_id = b.building_id
-				WHERE r.room_id='".$room_id."'
-		";
+	if( isset( $_POST['room_id'] ) ){
+		$room_id = $_POST['room_id'];
+		echo '<div id="cont">';
+		Admin::roomInfo( $room_id );
+		echo '<br /><label>Student RCSID: </label><input id="the_user" type="text" >';
+		echo '<br /><input type="submit" id="reg_user" value="Register" >';
+		echo '</div>';
+		echo '<script>
+					$("#reg_user").click(function(event){
+						$.post("pages/popup_registerStudents.php", { reg_user: $("#the_user").val(), room: '.$room_id.'  },
+						   function(data) {
+								$( "#cont" ).empty().append( data );
+						   });    
+					  });
+			  </script>';
+			  
+	} else if( isset( $_POST['reg_user'] ) ){
+	
+		$return = Admin::registerUser( $_POST['reg_user'], $_POST['room'] );
 		
-	$db->query($query);
-	$row = $db->fetch_row_assoc();
-	echo ''.$row['name'].' '.$row['number'];
-	echo '<br /><label>Student RCSID: </label><input type="text" >';
-	echo '<br /><input type="submit" value="Register" >';
-
+		if( !$return )
+			echo 'User has been registered!
+				<script>					
+					$("#content").load( "pages/search.php")					
+				</script>		
+				';
+		else
+			echo $return;
+	
+	}
 ?>
 

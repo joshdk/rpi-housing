@@ -1,5 +1,6 @@
 
 $().ready(function() {	
+	$("#dialog-message").html('');
 	mboxStatus( '#roomStatus', 'pages/popup_roomStatus.php', 'Room Status' );
 	mboxCreate( '#createAdmin', 'pages/popup_createAdmin.php', 'Create Admin' );
 });	

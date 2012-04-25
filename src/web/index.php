@@ -92,33 +92,7 @@
 			</div>
 
 			<div id="sidebar-bottom">
-				<!--
-				<h3>Quick Search</h3>
 
-				<ul class="">
-					<li><span class="label">Building:</span>
-
-						<select id="quick-building" name="building" class="dropdown">
-							<option value="all">All</option>
-							<option value="blitman">Blitman Residence Commons</option>
-							<option value="barh">Burdett Avenue Residence Hall</option>
-							<option value="colonie">Colonie Apartments</option>
-							<option value="davison">Davison Hall</option>
-							<option value="ecomplex">E-Complex</option>
-							<option value="north">North Hall</option>
-							<option value="nugent">Nugent Hall</option>
-							<option value="polytech">Polytechnic Residence Commons</option>
-							<option value="quad">Quadrangle (The Quad)</option>
-							<option value="sharp">Sharp Hall</option>
-							<option value="rahp">Single RAHP</option>
-							<option value="stacwyck">Stacwyck Apartments</option>
-							<option value="Warren">Warren Hall</option>
-						</select>
-
-					</li>
-					<li class="last"><input id="quick-search" type="submit" value="Search" /></li>
-				</ul>
-				-->
 			</div>
 
 		</div>
