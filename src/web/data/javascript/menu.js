@@ -11,7 +11,7 @@ $(document).ready(function(){
 //homepage
 $('#homepage').click(function(e) {
 	
-	$('#content').load( "pages/homepage.php")	
+	location.reload();
 });
 
 //buildings

@@ -73,8 +73,5 @@
 	$('#example').dataTable( {
 		"sPaginationType":"full_numbers",
          "aaSorting":[[1, "desc"]]		 
-	} );
-	
-	
-			
+	} );			
 </script>

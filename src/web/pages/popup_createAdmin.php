@@ -6,16 +6,16 @@
 	}
 	
 ?>
-<div id='cont'>
+<div id='cdamin' align='center' valign='center'>
 	Admin RCSID: <input type='text' name='admin' id='admin'>
-				 <input type='submit' value='Add' id='submit'>
+				 <input type='submit' value='Add' id='cadmin-submit'>
 </div>			 
 <script>
 
- $("#submit").click(function(event){
+ $("#cadmin-submit").click(function(event){
     $.post("pages/popup_createAdmin.php", { username: $('#admin').val() },
 	   function(data) {
-			$( "#cont" ).empty().append( data );
+			$( "#cdamin" ).empty().append( data );
 	   });    
   });
 

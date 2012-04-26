@@ -17,9 +17,9 @@
 	else {
 	
 		echo "
-				<div id='cont'>
+				<div id='acs-cont' align='center' valign='center'>
 					Student RCSID: <input type='text' name='student' id='student'>
-								 <input type='submit' value='Lookup' id='submit'>
+								 <input type='submit' value='Lookup' id='acs-submit'>
 				</div>	";
 	
 	}
@@ -27,17 +27,17 @@
 ?>
 		 
 <script>
- $("#submit").click(function(event){
+ $("#acs-submit").click(function(event){
     $.post("pages/popup_adminCheckStatus.php", { username: $('#student').val() },
 	   function(data) {
-			$( "#cont" ).html( data );
+			$( "#acs-cont" ).html( data );
 	   });    
   });
   
  $("#remove").click(function(event){
     $.post("pages/popup_adminCheckStatus.php", { remove: true },
 	   function(data) {
-			$( "#cont" ).html( data );
+			$( "#acs-cont" ).html( data );
 	   });    
   });
 

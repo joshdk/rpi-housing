@@ -48,7 +48,7 @@ function mboxCreate( trigger, source, title ) {
 					closeOnEscape: true,
 					draggable: false,
 					resizable: false,
-					height: 100,
+					height: 150,
 					width: 400,
 					open: function() {
 					//display correct dialog content
