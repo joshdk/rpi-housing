@@ -1,1 +1,21 @@
-<h3>about north</h3>
+<h3>About North</h3>
+
+<img src="images/north-img.jpg" class="building-img" alt="north-img" />		
+
+<h4>- Cost</h4>
+<ul class="building-cost">
+	<li>For 2011-2012 academic year:</li>
+	<li>Double - $6840/person</li>
+	
+</ul>
+
+<h4>- Description</h4>
+<p class="building-description">
+North Hall is conveniently located near the main campus on Sage Avenue and houses 87 upper-class students. Nearly half of the rooms are singles, and the rest of the rooms are doubles.
+
+Each floor has two baths that are shared by approximately 22 students and a kitchen. There is a large lounge on the main floor for study, reading, socializing, or television viewing.
+</p>
+
+<h4>- Layout</h4>(click for full size)
+<a href="images/north-layout.gif" target="_blank"><img class="layout" src="images/north-layout.gif" alt="blitman-layout" /></a>
+					

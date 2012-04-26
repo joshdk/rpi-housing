@@ -1,1 +1,20 @@
-<h3>about barh</h3>
+<h3>About BARH</h3>
+
+<img src="images/barh-img.jpg" class="building-img" alt="barh-img" />		
+
+<h4>- Cost</h4>
+<ul class="building-cost">
+	<li>For 2011-2012 academic year:</li>
+	<li>Single - $7400/person</li>
+	<li>Double - $6840/person</li>
+	<li>Triple - $6000/person</li>
+</ul>
+
+<h4>- Description</h4>
+<p class="building-description">
+The Burdett Avenue Residence Hall - "BARH", located near the Houston Field House and the Chapel and Cultural Center, consists of four wings built around a central dining area. Each wing has its own lounge, activity room, and kitchenette. All first-year and upperclass students who live in BARH must participate in a meal plan. First-year students can choose from the top 3 plans, upperclass students can choose any plan. Most rooms in BARH are doubles, singles, and converted triples with a full connecting bath between. There is at least one natural triple in each wing. All triples will contain a bed, dresser, shared closet, desk, desk chair, bureau, and Ethernet port per student.
+</p>
+
+<h4>- Layout</h4>(click for full size)
+<a href="images/barh-layout.gif" target="_blank"><img class="layout" src="images/barh-layout.gif" alt="blitman-layout" /></a>
+					

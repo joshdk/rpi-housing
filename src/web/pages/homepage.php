@@ -1,7 +1,7 @@
 
 <div id="post1">
 	<h2>Welcome to RPI Housing</h2>
-	If you would like to participate in the RPI Housing Lottery you must first blah blah blah
+	As a student you may log in using your RCSID and view a live display showing room occupancy and your current status.
 
 </div>
 <div id="post2">
@@ -28,8 +28,8 @@
 	
 	<?php } else { ?>
 	
-		<h2>Sign up for the housing lottery</h2>
-		<h4>Login in on the right to recieve a lottery number!</h4>
+		<h2>Sign in to enhance your experience</h2>
+		
 		
 	<?php } ?>
 	
