@@ -21,7 +21,7 @@
 			<ul>
 				<li><h4>Admin Account Settings:</h4></li>
 				<li><a href="#" id="createAdmin" >Create New Admin</a></li>
-				<li><a href="#" id="registerStudent" >Register Student for Room</a></li>
+				<li><a href="#" id="adminCheckStatus" >Check Students Room Status</a></li>
 			</ul>	
 	
 		<?php } ?>
@@ -33,7 +33,9 @@
 		
 	<?php } ?>
 	
-	<div id="dialog-message"></div>
+	<div id="dialog-message1"></div>
+	<div id="dialog-message2"></div>
+	<div id="dialog-message3"></div>
 	<script type="text/javascript" src="data/javascript/homepage.js"></script>
 </div>
 <br class="clearfix" />

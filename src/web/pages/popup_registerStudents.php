@@ -1,5 +1,4 @@
 <?php
-	include_once($_SERVER['DOCUMENT_ROOT'] . '/api/core/database.php');
 	include_once($_SERVER['DOCUMENT_ROOT'] . '/web/data/PHP/admin.php' );
 	
 	
